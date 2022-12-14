@@ -1,0 +1,8 @@
+yesterday:
+- create react app and repository
+- install redux/toolkit, react-router-dom and material UI
+- made the main structure
+today:
+- make main page
+problems:
+- none
