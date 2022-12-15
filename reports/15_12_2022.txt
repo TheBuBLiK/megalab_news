@@ -1,0 +1,6 @@
+yesterday:
+- made header and footer
+today:
+- make main page
+problems:
+- none
