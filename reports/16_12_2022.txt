@@ -1,0 +1,7 @@
+yesterday:
+- figured out postman
+today:
+- work with redux/toolkit
+- make main page
+problems:
+- none

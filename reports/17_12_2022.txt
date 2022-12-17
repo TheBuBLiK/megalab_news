@@ -1,0 +1,7 @@
+yesterday:
+- worked with redux/toolkit
+today:
+- work with API
+- make main page
+problems:
+- none
