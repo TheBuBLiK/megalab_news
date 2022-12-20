@@ -1,0 +1,7 @@
+yesterday:
+- practiced how to create CRAD on another project
+today:
+- work with API
+- make main page
+problems:
+- none
