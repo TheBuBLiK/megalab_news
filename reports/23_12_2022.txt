@@ -1,0 +1,6 @@
+yesterday:
+- made filtration markup
+today:
+- make main page
+problems:
+- none
