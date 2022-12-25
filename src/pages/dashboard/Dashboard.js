@@ -1,4 +1,12 @@
-import { Box, Button, Checkbox, FormControlLabel, FormGroup, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Checkbox,
+  FormControlLabel,
+  FormGroup,
+  IconButton,
+  Typography,
+} from '@mui/material';
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import Footer from '../../components/footer/Footer';
@@ -13,12 +21,29 @@ const ColorButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+function createData(date, title, text) {
+  return { date, title, text };
+}
+
+const news = [
+  createData(
+    '26.12.2022',
+    'Some news',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
+  ),
+  createData(
+    '26.12.2022',
+    'Some news',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
+  ),
+];
+
 const Dashboard = () => {
   return (
     <Box>
       <Header />
-      <Box sx={{ display: 'flex' }}>
-        <Box>
+      <Box sx={{ display: 'flex', margin: '34px 150px', justifyContent: 'space-between' }}>
+        <Box sx={{ width: '20%' }}>
           <Typography>Фильтрация</Typography>
           <FormGroup>
             <Box>
@@ -54,7 +79,22 @@ const Dashboard = () => {
             <ColorButton variant="contained">Применить</ColorButton>
           </FormGroup>
         </Box>
-        <Box></Box>
+        <Box sx={{ width: '70%' }}>
+          {news.map((info, index) => (
+            <Box sx={{ display: 'flex' }}>
+              <img src="" alt="newsImg" />
+              <Box>
+                <Typography>{info.date}</Typography>
+                <Typography>{info.title}</Typography>
+                <Typography>{info.text}</Typography>
+                <a href="">Читать дальше</a>
+                <IconButton>
+                  <img src="" alt="shareImg" />
+                </IconButton>
+              </Box>
+            </Box>
+          ))}
+        </Box>
       </Box>
       <Footer />
     </Box>

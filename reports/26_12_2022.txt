@@ -1,0 +1,6 @@
+yesterday:
+- made news prototype
+today:
+- make main page
+problems:
+- none
